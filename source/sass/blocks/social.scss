@@ -1,0 +1,47 @@
+.social {
+  .main-nav & {
+  display: none;
+
+    @include media(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: $main-color-text;
+    }
+
+    .page-footer & {
+      margin-right: -12px;
+    }
+  }
+
+  .social__link {
+    display: block;
+
+    .main-nav & {
+      padding: 11px;
+    }
+  }
+
+  .page-footer & {
+    display: flex;
+    justify-content: end;
+
+    @include media(mobile) {
+      justify-content: flex-start;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.social__item {
+  margin-right: 5px;
+
+  .page-footer & {
+    margin-right: 12px;
+  }
+  
+  &:hover img {
+    background-color: $color-red;
+    border-radius: 50%;
+  }
+}

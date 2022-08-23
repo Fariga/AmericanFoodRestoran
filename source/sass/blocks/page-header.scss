@@ -1,0 +1,48 @@
+.page-header {
+  height: 134px;
+  padding-top: 53px;
+  margin-bottom: 78px;
+  position: relative;
+  z-index: 100;
+
+  @include media(tablet) {
+    height: 70px;
+    padding-top: 5px;
+    margin-bottom: 0;
+    background-color: $color-yellow;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }   
+}
+
+.page-header__container {
+  display: flex;
+
+  @include media(tablet) {
+    display: block;
+  }
+}
+
+.page-header {
+  &__picture-desctop {
+    @include media(tablet) {
+      display: none;
+    }
+  }
+
+  &__picture-mobile {
+    display: none;
+
+    @include media(tablet) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.page-header__logo {
+  @include media(tablet) {
+    margin-bottom: 10px;
+  }
+}

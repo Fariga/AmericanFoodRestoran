@@ -1,0 +1,65 @@
+.delivery {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 7px;
+  
+  @include media(tablet) {
+    margin: 0;
+    justify-content: center;
+  }
+  
+}
+
+.delivery > .motobike {
+  @include media(tablet) {
+    display: none;
+  }
+}
+
+.delivery__text {
+
+  @include media(tablet) {
+    display: none;
+  }
+}
+.delivery__phone {
+  padding: 12px 0 12px 12px;
+  @include media(tablet) {
+    // width: 100%;
+    text-align: center;
+    padding: 0;
+    flex-grow: 1;
+
+    &:hover,
+    &:active {
+      background-color: $color-yellow-3;
+    }
+    
+    &:active {
+      outline: 1px solid $main-color-text; 
+    }
+  }
+
+  & .motobike {
+    display: none;
+
+    @include media(tablet) {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
+
+.delivery__text,
+.delivery__phone {
+  font-family: $main-font;
+  font-size: 17px;
+  line-height: 1.2;
+  color: $main-color-text;
+  font-weight: 700;
+
+  @include media(tablet) {
+    line-height: 3;
+  }
+}

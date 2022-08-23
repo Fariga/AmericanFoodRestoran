@@ -1,0 +1,65 @@
+.price {
+  background-color: $color-red;
+  width: 28.11%;
+  height: 35.15%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  bottom: -5.677%;
+  left: 2.424%;
+  background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><circle cx='50%' cy='50%' r='40%' style='fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-dasharray: 7 10'/></svg>");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;        
+  padding: 20px;
+  min-height: 100px;
+  min-width: 100px;
+}
+
+.price__wrapper {
+  align-self: center;
+
+  &::before {
+    content: "$";
+    font-family: $main-font-2;
+    font-size: clamp(28px, 5vw, 57px);
+    line-height: 1.053;
+    color: $color-text-1;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+}
+
+.price__dollar,
+.price__coin,
+.price__text {
+  font-family: $main-font-2;
+  line-height: 1;
+  color: $color-text-1;
+  letter-spacing: 2px;
+}
+
+.price__dollar {
+  font-size: clamp(28px, 5vw, 57px);
+}
+
+.price__coin {
+  font-size: clamp(15px, 5vw, 30px);
+}
+
+.price__text {
+  font-size: clamp(15px, 5vw, 35px);
+
+  width: 100%;
+  letter-spacing: 15px;
+  text-align: center;
+
+  @include media(tablet) {
+    letter-spacing: 10px;
+  }
+
+  @include media(mobile) {
+    align-self: center;
+  }
+}
+

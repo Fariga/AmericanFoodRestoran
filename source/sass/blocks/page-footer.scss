@@ -1,0 +1,149 @@
+.page-footer {
+  padding-bottom: 64px;
+
+  @include media(tablet) {
+    padding-bottom: 10px;
+  }
+
+  @include media(mobile) {
+    padding-bottom: 0;
+  }
+}
+
+.page-footer__container {
+  background-image: url(/img/background-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 82px 32px 22px 43px;
+  
+  @include media(tablet) {
+    padding: 15px 15px 10px 15px;
+  }
+
+  @include media(mobile) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+.page-footer__wrapper {
+  display: flex;
+
+  @include media(mobile) {
+    flex-direction: column;
+  }
+}
+
+.page-footer__link {
+  display: block;
+  margin-bottom: 48px;
+
+  @include media(tablet) {
+    margin-bottom: 30px;
+  }
+
+  @include media(mobile) {
+    margin-bottom: 20px;
+  }
+
+  & img {
+    @include media(tablet) {
+      margin: 0 auto;
+    }
+
+    @include media(mobile) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.page-footer__text {
+  font-family: $main-font;
+  font-size: 17px;
+  line-height: 1.47;
+  color: $color-text-1;
+  margin-bottom: 172px;
+  width: 38.42%;
+  margin-right: auto;
+  padding-right: 15px;
+
+  @include media(tablet) {
+    font-size: 15px;
+  }
+
+  @include media(mobile) {
+    margin-bottom: 50px;
+    font-size: 13px;
+    padding-right: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.page-footer__contacts {
+  padding-top: 16px;
+  
+
+  @include media(mobile) {
+  padding-top: 0;
+  margin-bottom: 50px;
+  }
+}
+
+.contacts__box {
+  margin-bottom: 17px;
+  display: flex;
+  align-items: center;
+}
+.contacts__img {
+  margin-right: 35px;
+  align-items: center;
+}
+
+.contacts__address-link,
+.contacts__email-link {
+  font-family: $main-font;
+  font-size: 21px;
+  line-height: 1.81;
+  color: $color-text-1;
+
+  @include media(tablet) {
+    font-size: 17px;
+  }
+  
+  @include media(mobile) {
+    font-size: 15px;
+  }
+}
+
+.contacts__email {
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__box {
+  display: flex;
+  align-items: center;
+
+  @include media(mobile) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+.coperating {
+  font-family: $main-font;
+  font-size: 17px;
+  line-height: 1;
+  color: $color-text-1;
+  margin-right: auto;
+
+  @include media(mobile) {
+    font-size: 13px;
+  }
+}
+
+
+
+
+

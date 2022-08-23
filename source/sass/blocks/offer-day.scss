@@ -1,0 +1,8 @@
+.offer-day {
+  padding: 78px 15px 131px;
+
+  @include media(tablet) {
+    padding: 30px 15px;
+  }
+}
+

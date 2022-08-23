@@ -1,0 +1,39 @@
+<header class="page-header wrapper">
+  <div class="page-header__container">
+    <h1 class="page-header__logo">
+      <a class="page-header__link" href="#">
+        <img class="page-header__picture-desctop" src="/img/icon-logo-big.png" alt="icon">
+        <img class="page-header__picture-mobile" src="/img/burger.png" alt="icon">
+      </a>
+    </h1>
+    <nav class="main-nav">
+      <button class="main-nav__btn btn" type="button">
+        <span class="btn__line btn__line--1"></span>
+        <span class="btn__line btn__line--2"></span>
+        <span class="btn__line btn__line--3"></span>
+      </button>
+      <div class="main-nav__container">
+        <div class="delivery">
+          @@include('./main/motobike.html')
+          <span class="delivery__text">Express Delivery</span>
+          <a class="delivery__phone" href="tel:+1 234 567 890">@@include('./main/motobike.html')+1 234 567 890</a>
+        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Home</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Menu</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Our Story</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Contact Us</a>
+          </li>
+        </ul>
+        @@include('./social.html')
+      </div>
+    </nav>
+  </div>
+</header>

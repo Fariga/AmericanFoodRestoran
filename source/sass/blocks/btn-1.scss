@@ -1,0 +1,28 @@
+.btn-1 {
+  background-color: $color-red;
+  font-family: $main-font-3;
+  font-size: 17px;
+  line-height: 2.24;
+  color: $color-text-1;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 38px;
+  сursor: pointer;
+
+  &:hover {
+    background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8,#777);
+  }
+
+  &:active {
+    padding: 25px 40px;
+  }
+
+  @include media(mobile) {
+    font-size: 15px;
+    width: 100%;
+
+    &:active {
+      width: 90%;
+    }
+  }
+}

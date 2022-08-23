@@ -1,0 +1,27 @@
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav__btn {
+  display: none;
+
+  @include media(tablet) {
+    display: block;
+  }
+}
+
+.main-nav__container {
+  @include media(tablet) {
+    width: 100%;
+    position: fixed;
+    left: -100%;
+    background-color: $color-yellow-2;
+    bottom: 0;
+    top: 70px;
+    transition: left .5s;
+  
+    .main-nav--open & {
+      left: 0;
+    }
+  }
+}
